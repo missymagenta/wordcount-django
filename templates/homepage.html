@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THIS IS THE HOMEPAGE</title>
+</head>
+<body>
+
+    <a href="{% url 'about' %}">Find out more about this project</a>
+    <br>
+     <h1>THIS IS THE HOMEPAGE</h1>
+
+     <form action="{% url "count" %}">
+        <textarea cols="40" rows="5" name="fulltext">
+        </textarea>
+         <br />
+
+         <input type="submit" value="Count!"/>
+     </form>
+</body>
+</html>
